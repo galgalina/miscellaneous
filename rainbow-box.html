@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    /* .container{
+      display: block;
+      height: 800px;
+      width: 100%;
+      margin: 0 auto;
+    } */
+    .square{
+      display: block;
+      margin: 20px;
+      float: left;
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+    }
+
+    .square1 {
+      background: #e61010;
+    }
+
+    .square2 {
+     background: #fc9504;
+    }
+
+    .square3 {
+      background: #fce704;
+    }
+
+    .square4 {
+      background: #2d7f44;
+    }
+
+    .square5 {
+      background: #6dd2f4;
+    }
+
+    .square6 {
+      background: #063980;
+    }
+
+    .square7 {
+      background: #800080;
+    }
+
+    .dark{
+      display: block;
+      clear: both;
+      margin: 50px;
+      background: #332008;
+      width: 700px;
+      height: 350px;
+      border-radius: 15px;
+
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <div class="square square1"></div>
+
+  <div class="square square2"></div>
+
+  <div class="square square3"></div>
+
+  <div class="square square4"></div>
+
+  <div class="square square5"></div>
+
+  <div class="square square6"></div>
+
+  <div class="square square7"></div>
+
+  <div class="dark"></div>
+
+
+
+   <script>
+
+    var button1 = document.querySelector('.square1');
+    var button2 = document.querySelector('.square2');
+    var button3 = document.querySelector('.square3');
+    var button4 = document.querySelector('.square4');
+    var button5 = document.querySelector('.square5');
+    var button6 = document.querySelector('.square6');
+    var button7 = document.querySelector('.square7');
+
+    button1.onclick = function() {
+      document.querySelector('.dark').style.backgroundColor = "#e61010";
+    };
+
+    button2.onclick = function() {
+      document.querySelector('.dark').style.backgroundColor = "#fc9504";
+    };
+
+    button3.onclick = function() {
+      document.querySelector('.dark').style.backgroundColor = "#fce704";
+    };
+
+    button4.onclick = function() {
+      document.querySelector('.dark').style.backgroundColor = "#2d7f44";
+    };
+
+    button5.onclick = function() {
+      document.querySelector('.dark').style.backgroundColor = "#6dd2f4";
+    };
+
+    button6.onclick = function() {
+      document.querySelector('.dark').style.backgroundColor = "#063980";
+    };
+
+    button7.onclick = function() {
+      document.querySelector('.dark').style.backgroundColor = "#800080";
+    };
+
+
+
+   </script>
+</body>
+</html>
