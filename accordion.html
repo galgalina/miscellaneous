@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+  <style>
+    .container{
+      margin: 0 auto;
+    }
+    #accordion{
+      width: 50%;
+      margin: 50px;
+    }
+    .block{
+      display: block;
+      width: 300px;
+      height: 40px;
+      margin: 20px;
+      background-color: rgba(59, 222, 92, 0.5);
+      border: 2px solid #324936;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+<div id="accordion">
+  <div class="block">Section 1</div>
+  <div>
+    <p>
+    There were four of us - George, and William Samuel Harris, and myself, and Montmorency.
+    We were sitting in my room, smoking, and talking about how bad we were - bad from a medical point of view I mean, of course.
+    </p>
+  </div>
+  <div class="block">Section 2</div>
+  <div>
+    <p>
+    We were all feeling seedy, and we were getting quite nervous about it. Harris said he felt such extraordinary fits of giddiness
+    come over him at times, that he hardly knew what he was doing; and then George said that he had fits of giddiness too, and hardly knew what he was doing.
+    </p>
+  </div>
+  <div class="block">Section 3</div>
+  <div>
+    <p>
+    With me, it was my liver that was out of order. I knew it was my liver that was out of order, because I had just been reading a patent liver-pill circular, in which the detailed various symptoms by which a man could tell when his liver was out of order. I had them all.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+      <li>List item four</li>
+      <li>List item five</li>
+      <li>List item six</li>
+    </ul>
+  </div>
+  <div class="block">Section 4</div>
+  <div>
+    <p>
+    I tried to examine myself. I felt my pulse. I could not at first feel any pulse at all. Then, all of a sudden, it seemed to start off. I pulled out my watch and timed it. i made it a hundred and forty-seven to the minute.
+    </p>
+    <p>
+    I tried to feel my heart. I could not feel my heart. it had stopped beating. I have since been induced to come to the opinion that it must have been there all the time, and it must have been beating, but I cannot account for it.
+    </p>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

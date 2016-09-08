@@ -15,78 +15,44 @@
     }
   </style>
  <script>
-function randomInteger(min, max) {
-  return Math.floor( min + Math.random() * (max + 1 - min) );
-  }
+    function randomInteger(min, max) {
+      return Math.floor( min + Math.random() * (max + 1 - min) );
+      }
 
-function tableCreate(rows, columns){
-    var body = document.body,
-        tbl  = document.createElement('table');
+    function tableCreate(rows, columns){
+        var body = document.body,
+            tbl  = document.createElement('table');
 
-    for(var i = 0; i < rows; i++){
-        var tr = tbl.insertRow();
-        for(var j = 0; j < columns; j++){
-               var td = tr.insertCell();
-                td.textContent = randomInteger(1, 100);
+        for(var i = 0; i < rows; i++){
+              var tr = tbl.insertRow();
+            for(var j = 0; j < columns; j++){
+              var td = tr.insertCell();
+              td.textContent = randomInteger(1, 100);
+            }
         }
+        body.appendChild(tbl);
     }
-    body.appendChild(tbl);
-}
-tableCreate(20, 20);
+    tableCreate(20, 20);
 
 
+    var cells = document.getElementsByTagName('td');
+    var colorArray = [];
 
-function randomInteger(min, max) {
-  return Math.floor( min + Math.random() * (max + 1 - min) );
-  }
+        for (j = 1; j < 20; j++){
 
-var cells = document.getElementsByTagName('td');
-var colorArray = [];
+                r = randomInteger(0,255).toString(16);
+                g = randomInteger(0,255).toString(16);
+                b = randomInteger(0,255).toString(16);
 
-    for (j = 1; j < 20; j++){
+                var color = r + g + b;
 
-            r = randomInteger(0,255).toString(16);
-            g = randomInteger(0,255).toString(16);
-            b = randomInteger(0,255).toString(16);
-
-            var color = r + g + b;
-
-            colorArray.push(color);
-    }
+                colorArray.push(color);
+        }
 
 
-    for(var i = 0; i < cells.length; i++) {
-    cells[i].style.backgroundColor = '#' + colorArray[Math.floor(Math.random() * colorArray.length)];
-    }
-
-
-/*var reversedColorArray = [];
-     //var colorArray = ["11f755", "8f50c6", "e98964", "3b497e", "69716e", "f233fe", "492945", "8f3b77", "953147", "4d4193"];
-
-for(i = 0; i < colorArray.length; i++){
-
-  var red = colorArray[i].slice(0,1);
-  var green = colorArray[i].slice(2,3);
-  var blue = colorArray[i].slice(4,5);
-
-red = (255 - parseInt(red, 16)).toString(16);
-
-green = (255 - parseInt(green, 16)).toString(16);
-
-blue = (255 - parseInt(blue, 16)).toString(16);
-
-  var ultColor = red + green + blue;
-  reversedColorArray.push(ultColor);
-}
-
-for(var i = 0; i < cells.length; i++) {
-    cells[i].style.backgroundColor = '#' + reversedColorArray[Math.floor(Math.random() * reversedColorArray.length)];
-}*/
-
-
-
-
-
+        for(var i = 0; i < cells.length; i++) {
+        cells[i].style.backgroundColor = '#' + colorArray[Math.floor(Math.random() * colorArray.length)];
+        }
 
 </script>
 </body>
